@@ -1,0 +1,70 @@
+
+
+body{
+    padding: 10px 10px;
+    background-color: rgb(228, 220, 220);
+}
+
+.addedItemsContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addedItemsContainer h3{
+    margin-bottom: 38px;
+    margin-left: -5px ;
+    margin-top: 0px;
+}
+
+.content-table{
+    border-collapse: collapse;
+    
+
+}
+
+.content-table tbody tr td{
+    padding: 8px;
+}
+
+
+.content-table thead tr{
+    text-align: left;
+}
+
+.content-table thead tr,
+.content-table tbody tr{
+    border-bottom: 1px solid rgb(218, 215, 215);
+}
+
+.content-table tbody tr:nth-child(){
+    padding-left: 10px;
+}
+
+.content-table thead tr th{
+    padding-bottom: 20px;
+    padding-right: 10px;
+    
+}
+
+.item-img{
+    width: 80px;
+    border-radius: 2px;
+}
+
+.delete-icon{
+    width: 20px;
+}
+
+.delete-button{
+    border: none;
+    background-color: white;
+}
+
+#quantity{
+    max-width: 80px;
+    height: 26px;
+    border: 1px solid rgb(218, 216, 216);
+}
