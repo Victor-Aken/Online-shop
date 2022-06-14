@@ -68,3 +68,7 @@ body{
     height: 26px;
     border: 1px solid rgb(218, 216, 216);
 }
+
+tfoot h3{
+    padding-top: 30px;
+}

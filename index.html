@@ -16,7 +16,7 @@
            <a href="index2.html">
             <img class="cart-img" src="shopping cart img/shopping-cart-logo.jpg" alt="">
            </a>
-           <div id="itemCount" class="item-count">3</div>
+           <div id="itemCount" class="item-count">0</div>
        </div>
     </header>
     <main id="products-container" class="products-container">
@@ -266,7 +266,7 @@
                 <p class="product-rating" id="product-rating">4.0(1450)</p>
                 <h2 class="product-name" id="product-name">Men's Casual Leather Shoe</h2>
                 <p class="reference">Reference 1204</p>
-                <h2 class="product-price" id="product-price">$39.99</h2>
+                <h2 class="product-price" id="product-price">$39.00</h2>
                 <button class="add-btn" id="add-btn">
                     Add to Cart
                 </button>
@@ -278,7 +278,7 @@
                 <p class="product-rating" id="product-rating">4.0(1450)</p>
                 <h2 class="product-name" id="product-name">Casual Shoes Sneakers</h2>
                 <p class="reference">Reference 1204</p>
-                <h2 class="product-price" id="product-price">$15.99</h2>
+                <h2 class="product-price" id="product-price">$15.00</h2>
                 <button class="add-btn" id="add-btn">
                     Add to Cart
                 </button>
@@ -337,30 +337,36 @@
                 </tr>
             </thead>
             <tbody>
-                <tr  class="row">
+                <!-- <tr>
                     <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
                     <td>Men's Bullock Leather Shoe</td>
                     <td><input type="number" name="quantity" value="1" id="quantity"></td>
-                    <td>$39.60</td>
+                    <td class="price">$39.60</td>
+                    <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
+                </tr >
+                <tr>
+                    <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
+                    <td>Men's Bullock Leather Shoe</td>
+                    <td><input type="number" name="quantity" id="quantity"></td>
+                    <td class="price">$39.60</td>
                     <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
                 </tr>
                 <tr>
                     <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
                     <td>Men's Bullock Leather Shoe</td>
                     <td><input type="number" name="quantity" id="quantity"></td>
-                    <td>$39.60</td>
+                    <td class="price">$39.60</td>
                     <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
-                </tr>
-                <tr>
-                    <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
-                    <td>Men's Bullock Leather Shoe</td>
-                    <td><input type="number" name="quantity" id="quantity"></td>
-                    <td>$39.60</td>
-                    <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
-                </tr>
+                </tr> -->
             </tbody>
             <tfoot>
-
+                <tr class="bottom-row">
+                    <td><h3>Grand Total</h3></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><h3 id="grand-total">$3000.00</h3></td>
+                </tr>
             </tfoot>
         </table>
     </div>

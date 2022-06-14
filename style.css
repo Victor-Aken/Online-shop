@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     padding: 12px 20px;
     background-color: rgb(228, 220, 220);
@@ -117,6 +118,7 @@ body{
     padding-left: 8px;
     padding-bottom: 10px;
     
+    
 }
 
 .product-rating{
@@ -152,6 +154,10 @@ body{
 }
 .add-btn:hover{
     opacity: 0.8;
+}
+
+.add-btn:active{
+    opacity: 0.5;
 }
 
 .footer{
