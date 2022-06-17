@@ -3,7 +3,12 @@
 body{
     padding: 10px 10px;
     background-color: rgb(228, 220, 220);
+    height: 900px;
 }
+#cart-heading{
+  font-size: 40px;  
+}
+
 
 .addedItemsContainer{
     background-color: white;
@@ -25,9 +30,12 @@ body{
 
 }
 
-.content-table tbody tr td{
+.content-table tbody tr td,
+.content-table tfoot tr td{
     padding: 8px;
 }
+   
+
 
 
 .content-table thead tr{
@@ -38,6 +46,8 @@ body{
 .content-table tbody tr{
     border-bottom: 1px solid rgb(218, 215, 215);
 }
+
+
 
 .content-table tbody tr:nth-child(){
     padding-left: 10px;
@@ -71,4 +81,118 @@ body{
 
 tfoot h3{
     padding-top: 30px;
+}
+
+
+tfoot{
+    padding-top: 10px;
+}
+.use-td{
+    border-left: 1px solid rgb(218, 215, 215);
+}
+
+#Subtotal{
+    padding-bottom: 0;
+    margin-bottom: -10px;
+}
+
+#shipping{
+    height: 40px;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+#discount{
+  padding-top: 0;  
+}
+
+#coupon-input{
+    width: 250px;
+    height: 34px;
+    font-size: 15px;
+    border: none;
+    padding: 0 5px;
+    border: 1px solid rgb(218, 215, 215);
+    outline: none;
+    border-radius: 0 4px 4px 0;
+    
+}
+
+.amount, #discount-value{
+    font-weight: 550;
+}
+
+#total-amount, #total, .useful-td{
+    padding-top: 15px;
+    border-top: 1px solid rgb(218, 216, 216);
+    font-weight:  bold;
+}
+
+#coupon-input::placeholder{
+    color: rgb(75, 67, 67);
+    font-size: 16px;
+}
+
+#apply-button{
+    height: 37px;
+    width: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(87, 6, 87);
+    margin-left: -8px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    
+}
+
+p{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: ;
+}
+
+.checkout-row{
+    border-top: 1px solid rgb(218, 215, 215);  
+}
+
+#continue-shopping-button{
+    height: 38px;
+    width: 180px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: ;
+    background-color: rgb(88, 85, 85);
+    border-radius: 4px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+#continue-shopping-button:hover{
+    opacity: 0.8;
+}
+#continue-shopping-button:active{
+    opacity: 0.6;
+}
+
+
+#checkout-button{
+    height: 38px;
+    width: 180px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgb(87, 6, 87);
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: opacity 0.25s;
+
+}
+#checkout-button:hover{
+    opacity: 0.8;
+}
+#checkout-button:active{
+    opacity: 0.6;
 }

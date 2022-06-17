@@ -13,9 +13,12 @@
     <header id="header" class="header">
         <h2 class="product">Products</h2>
        <div class="cart-details">
-           <a href="index2.html">
+        <button class="cart-details-btn" id="cart-details-btn">
             <img class="cart-img" src="shopping cart img/shopping-cart-logo.jpg" alt="">
-           </a>
+        </button>
+           <!-- <a href="index2.html">
+            <img class="cart-img" src="shopping cart img/shopping-cart-logo.jpg" alt="">
+           </a> -->
            <div id="itemCount" class="item-count">0</div>
        </div>
     </header>
@@ -310,11 +313,11 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="pages">
+    <footer class="footer" id="product-page-footer">
+        <!-- <div class="pages">
             <button class="previous">Previous</button>
             <button class="next">Next</button>
-        </div>
+        </div> -->
         <div class="btt">
             <button class="btt-btn">
                 Back To Top 
@@ -323,7 +326,7 @@
     </footer>
 
 
-    <h1>Cart Details</h1>
+    <h1 id="cart-heading">Cart Details</h1>
     <div class="addedItemsContainer" id="addedItemsContainer">
         <h3>Order Summary</h3>
         <table class="content-table">
@@ -336,37 +339,104 @@
                     <th>REMOVE</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="containItems">
                 <!-- <tr>
                     <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
-                    <td>Men's Bullock Leather Shoe</td>
+                    <td class="item-name">Men's Bullock Leather Shoe</td>
                     <td><input type="number" name="quantity" value="1" id="quantity"></td>
                     <td class="price">$39.60</td>
                     <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
                 </tr >
                 <tr>
                     <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
-                    <td>Men's Bullock Leather Shoe</td>
+                    <td class="item-name">Men's Bullock Leather Shoe</td>
                     <td><input type="number" name="quantity" id="quantity"></td>
                     <td class="price">$39.60</td>
                     <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
                 </tr>
                 <tr>
                     <td><img class="item-img" src="shopping cart img\Crocodile Pattern Mens Bullock Leather Shoes Oxford Formal Shoes Retro Black-19,500Naira.jpg" alt="" class="product-img"></td>
-                    <td>Men's Bullock Leather Shoe</td>
+                    <td class="item-name">Men's Bullock Leather Shoe</td>
                     <td><input type="number" name="quantity" id="quantity"></td>
                     <td class="price">$39.60</td>
                     <td><button class="delete-button"><img class="delete-icon" src="shopping cart img\delete-icon.png" alt=""></button></td>
                 </tr> -->
             </tbody>
             <tfoot>
-                <tr class="bottom-row">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                   </tr>
+                   <tr>
+                    <td>
+                        <p>Apply Coupon to get Discount!</p>
+                    </td>
+                    <td></td>
+                    <td class="use-td"  id="Subtotal">Subtotal Price:</td>
+                    <td></td>
+                    <td class="amount" id="Subtotal-Value">$0</td>
+                   </tr>
+                   <tr>
+                    <td>
+                        <form action="">
+                            <input type="text" placeholder="Coupon Code" id="coupon-input">
+                            <input type="submit" value="Apply" id="apply-button">
+                        </form>
+                    </td>
+                    <td></td>
+                    <td class="use-td" id="shipping">Shipping Cost(+):</td>
+                    <td></td>
+                    <td class="amount">$0</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="use-td" id="discount">Discount(-):</td>
+                    <td></td>
+                    <td id="discount-value">$0</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="use-td">Tax(18%):</td>
+                    <td></td>
+                    <td class="amount">$0</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="use-td" id="total">Total Payable:</td>
+                    <td class="useful-td"></td>
+                    <td id="total-amount">$0</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                   </tr>
+                   <tr class="checkout-row">
+                     <td>
+                        <button id="continue-shopping-button">Continue Shopping</button>
+                     </td>
+                     <td></td>
+                     <td></td>
+                     <td></td> 
+                     <td>
+                        <button id="checkout-button">Proceed to Checkout</button>
+                     </td>  
+                   </tr>
+                <!-- <tr class="bottom-row">
                     <td><h3>Grand Total</h3></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><h3 id="grand-total">$3000.00</h3></td>
-                </tr>
+                    <td><h3 id="grand-total">$0.00</h3></td>
+                </tr> -->
             </tfoot>
         </table>
     </div>

@@ -6,7 +6,8 @@
 body{
     padding: 12px 20px;
     background-color: rgb(228, 220, 220);
-    /* background-color: rgb(226, 219, 211); */
+     
+    
 }
 .header{
 
@@ -30,10 +31,24 @@ body{
 
 }
 
+
+
+
+.cart-details-btn{
+    border: none;
+    height: 38px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+
+
+
 .product{
     display: inline;
     width: 120px;
-    font-size: 28px;
+    font-size: 35px;
 }
 
 

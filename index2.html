@@ -45,13 +45,73 @@
                 </tr>
             </tbody>
             <tfoot>
-                <tr class="bottom-row">
-                    <td><h3>Grand Total</h3></td>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><h3 id="grand-total">$3000.00</h3></td>
-                </tr>
+                    <td></td>
+                    <td></td>
+                   </tr>
+                   <tr>
+                    <td>
+                        <p>Apply Coupon to get Discount!</p>
+                    </td>
+                    <td></td>
+                    <td class="use-td"  id="Subtotal">Subtotal Price:</td>
+                    <td></td>
+                    <td class="amount">$1000</td>
+                   </tr>
+                   <tr>
+                    <td>
+                        <form action="">
+                            <input type="text" placeholder="Coupon Code" id="coupon-input">
+                            <input type="submit" value="Apply" id="apply-button">
+                        </form>
+                    </td>
+                    <td></td>
+                    <td class="use-td" id="shipping">Shipping Cost(+):</td>
+                    <td></td>
+                    <td class="amount">$1000</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="use-td" id="discount">Discount(-):</td>
+                    <td></td>
+                    <td id="discount-value">$1000</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="use-td">Tax(18%):</td>
+                    <td></td>
+                    <td class="amount">$1000</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="use-td" id="total">Total Payable:</td>
+                    <td class="useful-td"></td>
+                    <td id="total-amount">$1000</td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                   </tr>
+                   <tr class="checkout-row">
+                     <td>
+                        <button id="continue-shopping-button">Continue Shopping</button>
+                     </td>
+                     <td></td>
+                     <td></td>
+                     <td></td> 
+                     <td>
+                        <button id="checkout-button">Proceed to Checkout</button>
+                     </td>  
+                   </tr>
             </tfoot>
         </table>
     </div>
