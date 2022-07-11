@@ -1,18 +1,21 @@
 
 
+
 body{
     padding: 10px 10px;
     background-color: rgb(228, 220, 220);
     height: 900px;
 }
 #cart-heading{
-  font-size: 40px;  
+  font-size: 40px;
+  display: none;  
+
 }
 
 
 .addedItemsContainer{
     background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +35,7 @@ body{
 
 .content-table tbody tr td,
 .content-table tfoot tr td{
-    padding: 8px;
+    padding: 4px;
 }
    
 
@@ -40,6 +43,7 @@ body{
 
 .content-table thead tr{
     text-align: left;
+    font-family: rubik;
 }
 
 .content-table thead tr,
@@ -47,11 +51,6 @@ body{
     border-bottom: 1px solid rgb(218, 215, 215);
 }
 
-
-
-.content-table tbody tr:nth-child(){
-    padding-left: 10px;
-}
 
 .content-table thead tr th{
     padding-bottom: 20px;
@@ -62,6 +61,33 @@ body{
 .item-img{
     width: 80px;
     border-radius: 2px;
+}
+
+.plus-minus{
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+}
+
+.bi-dash-lg{
+    clip-path: circle();
+    border: none;
+    margin-right: 8px;
+    padding-right: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.quantity{
+    font-size: 18px;
+}
+.bi-plus-lg{
+    clip-path: circle();
+    margin-left: 8px;
+    padding-left: 0;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+
 }
 
 .delete-icon{
@@ -79,62 +105,44 @@ body{
     border: 1px solid rgb(218, 216, 216);
 }
 
-tfoot h3{
-    padding-top: 30px;
-}
 
 
-tfoot{
-    padding-top: 10px;
-}
-.use-td{
-    border-left: 1px solid rgb(218, 215, 215);
+
+
+.cart-page-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
 }
 
-#Subtotal{
-    padding-bottom: 0;
-    margin-bottom: -10px;
+.footer-left{
+    height: 200px;
+    min-width: 280px;
+    /* background-color: aqua; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-#shipping{
-    height: 40px;
-    padding-top: 0px;
-    padding-bottom: 0;
-}
-
-#discount{
-  padding-top: 0;  
-}
-
-#coupon-input{
-    width: 250px;
-    height: 34px;
-    font-size: 15px;
+.input-coupon{
+    width: 180px;
+    height: 36px;
+    font-size: 16px;
     border: none;
     padding: 0 5px;
     border: 1px solid rgb(218, 215, 215);
     outline: none;
-    border-radius: 0 4px 4px 0;
-    
-}
+    border-radius: 4px 0 0 4px;
+    margin-left: 10px;
 
-.amount, #discount-value{
-    font-weight: 550;
 }
-
-#total-amount, #total, .useful-td{
-    padding-top: 15px;
-    border-top: 1px solid rgb(218, 216, 216);
-    font-weight:  bold;
-}
-
-#coupon-input::placeholder{
+.input-coupon::placeholder{
     color: rgb(75, 67, 67);
-    font-size: 16px;
+    font-size: 16px; 
 }
 
-#apply-button{
-    height: 37px;
+.apply-btn{
+    height: 36px;
     width: 50px;
     border: none;
     color: white;
@@ -142,20 +150,39 @@ tfoot{
     margin-left: -8px;
     cursor: pointer;
     border-radius: 0 4px 4px 0;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-p{
-    margin-bottom: 0;
-    font-size: 15px;
-    font-weight: ;
+.footer-right{
+    width: 350px;
+    height: 200px;
+    /* background-color: rgb(55, 55, 109); */
+    border-left: 1px solid rgb(218, 215, 215);
+
 }
 
-.checkout-row{
-    border-top: 1px solid rgb(218, 215, 215);  
+.price-value, .total-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
 }
 
-#continue-shopping-button{
+.total-div{
+    border-top: 1px solid rgb(218, 215, 215);
+    font-weight: bold;
+}
+
+.cart-page-end{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid rgb(218, 215, 215);
+}
+
+.continue-shopping-btn{
     height: 38px;
     width: 180px;
     border: none;
@@ -167,17 +194,16 @@ p{
     font-family: sans-serif;
     cursor: pointer;
     transition: opacity 0.25s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-#continue-shopping-button:hover{
+.continue-shopping-btn:hover{
     opacity: 0.8;
 }
-#continue-shopping-button:active{
+.continue-shopping-btn:active{
     opacity: 0.6;
 }
 
-
-#checkout-button{
+.checkout-btn{
     height: 38px;
     width: 180px;
     border: none;
@@ -188,11 +214,140 @@ p{
     font-family: sans-serif;
     cursor: pointer;
     transition: opacity 0.25s;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
-#checkout-button:hover{
+.checkout-btn:hover{
     opacity: 0.8;
 }
-#checkout-button:active{
+.checkout-btn:active{
     opacity: 0.6;
+}
+
+@media (max-width: 730px) {
+
+
+    .bi-dash-lg{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .quantity{
+        font-size: 18px;
+    }
+    .bi-plus-lg{
+        font-size: 18px;
+        font-weight: bold;
+    
+    }
+
+    .footer-left{
+        min-width: 180px;
+    }
+    .input-coupon{
+        width: 140px;
+        margin-left: 2px;
+    }
+    .input-coupon::placeholder{
+        font-size: 14px;
+    }
+
+    .footer-right{
+        max-width: 250px;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    thead{
+       font-size: 14px; 
+    }
+    .item-name, .price{
+        font-size: 14px;
+    }
+
+    .quantity{
+    font-size: 16px;
+    }
+    
+
+
+}
+
+@media (max-width: 525px) {
+
+    thead{
+        font-size: 12px;
+    }
+
+    .quantity{
+        font-size: 12px;
+    }
+
+    .plus-minus{
+        padding-left: 0px;
+    }
+        
+
+    .delete-icon{
+        width: 15px;
+    }
+
+    .item-name, .price{
+        font-size: 12px;
+    }
+
+    .addedItemsContainer{
+        
+        padding: 8px 0px 8px 5px;
+        margin: auto;
+    }
+    .addedItemsContainer h3{
+        margin-left: 0;
+    }
+
+
+    .item-img{
+        width: 60px;
+    }
+
+    .bi-dash-lg{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    
+
+    .input-coupon{
+        width: 120px;
+        height: 26px;
+        margin-left: 3px;
+    }
+    .input-coupon::placeholder{
+        font-size: 14px;
+    }
+
+    .apply-btn{
+        height: 26px;
+        width: 43px;
+        font-size: 12px;
+    }
+    .footer-right{
+        font-size: 12px;
+    }
+
+    .cart-page-end{
+        padding: 14px 14px 0 14px;
+    }
+
+    .continue-shopping-btn{
+        width: 120px;
+        height: 28px;
+        font-size: 11px;
+    }
+
+    .checkout-btn{
+        width: 126px;
+        height: 28px;
+        font-size: 11px;
+    }
 }

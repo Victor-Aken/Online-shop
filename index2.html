@@ -45,7 +45,7 @@
                 </tr>
             </tbody>
             <tfoot>
-                <tr>
+                <!-- <tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -111,10 +111,52 @@
                      <td>
                         <button id="checkout-button">Proceed to Checkout</button>
                      </td>  
-                   </tr>
+                   </tr> -->
             </tfoot>
         </table>
+
+        <div class="cart-page-footer">
+            <div class="footer-left">
+                <h5>Apply Coupon to get Discount!</h5>
+                <input type="text" class="input-coupon" placeholder="Coupon Code">
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="footer-right">
+                <div class="price-value">
+                    <div>Subtotal:</div>
+                    <div id="Subtotal-Value">$0</div>
+                </div>
+                <div class="price-value">
+                    <div>Shipping Cost(+):</div>
+                    <div>$0</div>
+                </div>
+                <div class="price-value">
+                    <div>Discount(-):</div>
+                    <div>$0</div>
+                </div>
+                <div class="price-value">
+                    <div>Tax:</div>
+                    <div>$0</div>
+                </div>
+                <div class="total-div">
+                    <div class="total-payable">Total Payable:</div>
+                    <div id="total-amount">$0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-page-end">
+            <button class="continue-shopping-btn" id="continue-shopping-button">
+                Continue shopping 
+            </button>
+            <button class="checkout-btn" id="checkout-button">
+                Proceed to Checkout
+            </button>
+        </div>
+
     </div>
+
     <!-- <script src="script.js"></script> -->
 </body>
 </html>
