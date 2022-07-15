@@ -19,6 +19,8 @@ body{
     display: flex;
     padding-left: 45px;
     padding-right: 48px;
+    margin-right: 70px;
+    margin-left: 70px;
     height: 80px;
     flex-wrap: nowrap;
     align-items: center;
@@ -98,12 +100,22 @@ body{
    .products-container{
     grid-template-columns: repeat(2, 222px);
    } 
+
+   .header{
+    margin-right: 50px;
+    margin-left: 50px;
+   }
 }
 
 @media (max-width: 680px) {
     .products-container{
      grid-template-columns: repeat(1, 222px);
     } 
+
+    .header{
+        margin: 0;
+    }
+
  }
 
  /* @media (max-width: 860px) {

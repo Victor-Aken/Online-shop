@@ -269,6 +269,10 @@ body{
     .quantity{
     font-size: 16px;
     }
+
+    #quantity{
+        width: 60px;
+    }
     
 
 
@@ -279,6 +283,12 @@ body{
     thead{
         font-size: 12px;
     }
+
+    #quantity{
+        width: 40px;
+        height: 22px;
+    }
+    
 
     .quantity{
         font-size: 12px;
